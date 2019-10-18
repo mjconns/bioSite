@@ -1,0 +1,232 @@
+body {
+	background-color: #FFC385;
+}
+
+.container {
+	font-family: 'BioRhyme', 'Noto Sans SC', sans-serif, serif;
+	padding-top: 50px;
+	padding-left: 40px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+}
+
+.row {
+	display: flex;
+	justify-content: space-around;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contentImage {
+	height: 400px;
+}
+
+h3 {
+	text-align: center;
+}
+
+.contentText {
+	background-color: #9EE7FF;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+	width: 650px;
+	height: 170px;
+	font-family: 'BioRhyme', 'Noto Sans SC', sans-serif, serif;
+	margin-top: 100px;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+P {
+	padding: 0px 5px 5px 5px;
+}
+
+.image1:hover .image {
+	opacity: 0.3;
+}
+
+.image1:hover .middle {
+	opacity: 1;
+}
+
+.imgMeetJesse {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	max-width: 300px;
+	height: auto;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+	border-radius: 100%;
+}
+
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 37%;
+	left: 657px;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%)
+}
+
+#overview {
+	margin-bottom: 20px;
+}
+
+#overviewText {
+	margin-top: 80px;
+	margin-right: 0;
+}
+
+#stats {
+	margin-left: 200px;
+}
+
+.name {
+	background-color: #4CAF50;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+}
+
+.imgMeetJesseR {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	max-width: 300px;
+	height: auto;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.imgMeetJesseL {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	max-width: 300px;
+	height: auto;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.imageR {
+	position: relative;
+	/* width: 50%; */
+}
+
+.imageL {
+	position: relative;
+	/* width: 50%; */
+	margin-right: 0;
+}
+
+.imageR:hover .overlayR {
+	width: 100%;
+}
+
+.imageL:hover .overlayL {
+	width: 100%;
+	left: 0;
+}
+
+.overlayR {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #008CBA;
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	transition: .5s ease;
+}
+
+.overlayL {
+	position: absolute;
+	bottom: 0;
+	left: 100%;
+	right: 0;
+	background-color: #008CBA;
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	transition: .5s ease;
+}
+
+.text {
+	white-space: nowrap;
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+#history {
+	margin-left: 200px;
+}
+
+#family {
+	max-width: 800px;
+}
+
+.familyText {
+	padding-top: 1px;
+	margin-bottom: 15px;
+	margin-left: 225px;
+	background-color: rgb(158, 231, 255);
+	width: 800px;
+	height: 150px;
+	font-family: 'BioRhyme', 'Noto Sans SC', sans-serif, serif;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.familyPhoto {
+	width: 1100px;
+	height: auto;
+	margin: auto;
+	margin-left: 105px;
+}
+
+hr {
+	overflow: visible;
+	height: 30px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px 0 0 0;
+	border-radius: 20px;
+}
+
+hr:before {
+	display: block;
+	content: "";
+	height: 30px;
+	margin-top: -31px;
+	border-style: solid;
+	border-color: black;
+	border-width: 0 0 1px 0;
+	border-radius: 20px;
+}
+
+.topyLink {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.topyLink a {
+	margin-left: 50%;
+}
