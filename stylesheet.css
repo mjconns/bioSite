@@ -9,7 +9,7 @@ body {
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 1200px;
+	max-width: fit-content;
 }
 
 .row {
@@ -37,6 +37,10 @@ h3 {
 	margin-top: 100px;
 	text-align: justify;
 	text-justify: inter-word;
+}
+
+#stats .contentText {
+	margin-right: 30px;
 }
 
 P {
@@ -71,20 +75,10 @@ P {
 	top: 37%;
 	left: 657px;
 	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%)
-}
-
-#overview {
-	margin-bottom: 20px;
-}
-
-#overviewText {
-	margin-top: 80px;
-	margin-right: 0;
-}
-
-#stats {
-	margin-left: 200px;
+	-ms-transform: translate(-50%, -50%);
+	margin-left: auto;
+	margin-right: auto;
+	max-width: fit-content;
 }
 
 .name {
@@ -174,8 +168,22 @@ P {
 	-ms-transform: translate(-50%, -50%);
 }
 
-#history {
+#overview {
+	margin-bottom: 20px;
+}
+
+#overviewText {
+	margin-top: 80px;
+	margin-right: 0;
+}
+
+#stats {
 	margin-left: 200px;
+}
+
+
+#history {
+
 }
 
 #family {
