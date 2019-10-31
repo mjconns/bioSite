@@ -2,6 +2,10 @@ body {
 	background-color: #FFC385;
 }
 
+#maintContent {
+	font-family: 'BioRhyme', 'Noto Sans SC', sans-serif, serif;
+}
+
 .container {
 	font-family: 'BioRhyme', 'Noto Sans SC', sans-serif, serif;
 	padding-top: 50px;
@@ -29,11 +33,11 @@ h3 {
 }
 
 .contentText {
+	font-family: 'BioRhyme', 'Noto Sans SC', sans-serif, serif;
 	background-color: #9EE7FF;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 	width: 650px;
-	height: 170px;
-	font-family: 'BioRhyme', 'Noto Sans SC', sans-serif, serif;
+	height: fit-content;
 	margin-top: 100px;
 	text-align: justify;
 	text-justify: inter-word;
@@ -196,7 +200,7 @@ P {
 	margin-left: 225px;
 	background-color: rgb(158, 231, 255);
 	width: 800px;
-	height: 150px;
+	height: fit-content;
 	font-family: 'BioRhyme', 'Noto Sans SC', sans-serif, serif;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
