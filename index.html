@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -8,23 +7,32 @@
     <meta name="description" content="">
     <meta name="keywords" content="biosite, bio, site, project, homework">
     <meta name="author" content="Micah Connelly">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=BioRhyme|Noto+Sans+SC&display=swap" rel="stylesheet">
     <link href="stylesheet.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="maintContent">
-        <div class="container">
-            <div id="overview" class="row">
+    <div class="container" id="maintContent">
 
-                <div class="contentImage">
-                    <div class="image1">
-                        <img src="img/jesse.jpg" alt="Jesse1" class="imgMeetJesse">
-                        <div class="middle">
-                            <div class="name">Jesse Carlberg</div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="jesse-card">
+                    <div class="jesse-card-inner">
+                        <div class="jesse-card-front">
+                            <img src="img/jesse.jpg" alt="Jesse1" class="imgMeetJesse">
+                        </div>
+                        <div class="jesse-card-back">
+                            <p id="jDog">Jesse Carlberg</p>
+                            <p>Senior Software Developer</p>
+                            <p>Colleague</p>
+                            <p>Friend</p>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-lg">
                 <div class="contentText" id="overviewText">
                     <h3>About Jesse</h3>
                     <p>
@@ -38,8 +46,10 @@
                     </p>
                 </div>
             </div>
+        </div>
 
-            <div id="stats" class="row">
+        <div class="row">
+            <div class="col-lg">
                 <div class="contentText">
                     <h3>Jesse's vital stats</h3>
                     <p>
@@ -47,6 +57,8 @@
                         time), he's a bundle of energy not to be underestimated. He's an quick-witted comical genious
                         that will surprise and delight you every day (author's note).
                 </div>
+            </div>
+            <div class="col-sm">
                 <div class="contentImage">
                     <div class="imageL">
                         <img src="img/jesseCoffee.jpg" alt="Jesse1" class="imgMeetJesseL">
@@ -74,8 +86,10 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div id="interests" class="row">
+        <div class="row">
+            <div class="col-sm">
                 <div class="contentImage">
                     <div class="imageR">
                         <img src="img/jesseSara.jpg" alt="Jesse1" class="imgMeetJesseR">
@@ -94,25 +108,28 @@
                                     <li>
                                         Outdoors activities
                                     </li>
-
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-lg">
                 <div class="contentText">
                     <h3>Jesse's interests</h3>
                     <p>
                         I used to enjoy rock climbing, and was an instructor for a while but after having three kids, I
                         haven’t done this for a long time.
-
+                        <br />
                         Cooking and baking. I make all the cupcakes for my wife’s work and decorate them. I take zero
                         credit because of the shame. The shame!
                     </p>
                 </div>
             </div>
+        </div>
 
-            <div id="history" class="row">
+        <div class="row">
+            <div class="col-lg">
                 <div class="contentText">
                     <h3>Jesse's History</h3>
                     <p>
@@ -130,8 +147,10 @@
                         staff.
                     </p>
                 </div>
+            </div>
+            <div class="col-sm">
                 <div class="contentImage">
-                    <div class="imageL">
+                    <div class="imageLH">
                         <img src="img/jessePast.jpg" alt="Jesse1" class="imgMeetJesseL">
                         <div class="overlayL">
                             <div class="text">
@@ -143,7 +162,7 @@
                                         Worked at UNMC
                                     </li>
                                     <li>
-                                        Works at TD Ameritrade
+                                        Works at TDA
                                     </li>
                                 </ul>
                             </div>
@@ -151,8 +170,10 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div id="goals" class="row">
+        <div class="row">
+            <div class="col-sm">
                 <div class="contentImage">
                     <div class="imageR">
                         <img src="img/jesseTank.jpg" alt="Jesse1" class="imgMeetJesseR">
@@ -160,10 +181,10 @@
                             <div class="text">
                                 <ul>
                                     <li>
-                                        Be a successful parent
+                                        Successful parent
                                     </li>
                                     <li>
-                                        Be mindful and present
+                                        Be mindful/present
                                     </li>
                                     <li>
                                         Enlightenment
@@ -173,6 +194,8 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-lg">
                 <div class="contentText">
                     <h3>Jesse's Goals</h3>
                     <p>
@@ -184,20 +207,20 @@
                     </p>
                 </div>
             </div>
+        </div>
 
-            <div id="family">
-                <div class="familyText">
-                    <h3>Jesse's Family</h3>
-                    <p>
-                        Jackson is 10 and my oldest child. Everly is 7 and a handful. Maverick, the youngest at 4 has no
-                        super powers of autism and is a neurotypical child that likes to wrestle and use his punchers on
-                        bad guys. Sarah, my wife, is a nurse and is the opposite of me in every
-                        way, which balances out the children.
-                    </p>
-                </div>
-                <div class="familyImg">
-                    <img src="img/carlbergFam.jpg" alt="family1" class="familyPhoto">
-                </div>
+        <div id="family">
+            <div class="familyText">
+                <h3>Jesse's Family</h3>
+                <p>
+                    Jackson is 10 and my oldest child. Everly is 7 and a handful. Maverick, the youngest at 4 has no
+                    super powers of autism and is a neurotypical child that likes to wrestle and use his punchers on
+                    bad guys. Sarah, my wife, is a nurse and is the opposite of me in every
+                    way, which balances out the children.
+                </p>
+            </div>
+            <div class="familyImg">
+                <img src="img/carlbergFam.jpg" alt="family1" class="familyPhoto">
             </div>
         </div>
         <hr />
@@ -205,7 +228,6 @@
             <p><a href="#maintContent">Run me again!</a></p>
         </div>
     </div>
-
 </body>
 
 </html>

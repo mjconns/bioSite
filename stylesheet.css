@@ -2,10 +2,6 @@ body {
 	background-color: #FFC385;
 }
 
-#maintContent {
-	font-family: 'BioRhyme', 'Noto Sans SC', sans-serif, serif;
-}
-
 .container {
 	font-family: 'BioRhyme', 'Noto Sans SC', sans-serif, serif;
 	padding-top: 50px;
@@ -17,15 +13,29 @@ body {
 }
 
 .row {
+	font-family: 'BioRhyme', 'Noto Sans SC', sans-serif, serif;
 	display: flex;
 	justify-content: space-around;
-	max-width: 1000px;
+	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
+	/* border: 1px solid #c3c3c3; */
+	display: -webkit-flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-align-content: center;
+	align-content: center;
+	margin-bottom: 40px;
 }
 
-.contentImage {
-	height: 400px;
+.col-lg {
+	margin: -50px 10px 10px 5px;
+	height: auto;
+}
+
+.col-sm {
+	margin: 5px 10px 10px 5px;
+	height: auto;
 }
 
 h3 {
@@ -41,14 +51,12 @@ h3 {
 	margin-top: 100px;
 	text-align: justify;
 	text-justify: inter-word;
+	padding: 5px 5px 5px 5px;
+	border: 1px dotted transparent;
 }
 
-#stats .contentText {
-	margin-right: 30px;
-}
-
-P {
-	padding: 0px 5px 5px 5px;
+.contentText:hover {
+	border: 1px dotted #3a7999;
 }
 
 .image1:hover .image {
@@ -57,6 +65,60 @@ P {
 
 .image1:hover .middle {
 	opacity: 1;
+}
+
+#jDog {
+	font-size: 2em;
+}
+
+.jesse-card {
+	background-color: transparent;
+	width: 300px;
+	height: 325px;
+	perspective: 1000px;
+	border-radius: 100%;
+}
+
+.jesse-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 100%;
+}
+
+.jesse-card:hover .jesse-card-inner {
+	transform: rotateY(180deg);
+	border-radius: 100%;
+}
+
+.jesse-card-front, .jesse-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	border-radius: 100%;
+}
+
+.jesse-card-front {
+	background-color: #bbb;
+	color: black;
+	border-radius: 100%;
+}
+
+.jesse-card-back {
+	padding-top: 120px;
+	background-color: #2980b9;
+	color: white;
+	transform: rotateY(180deg);
+	border-radius: 100%;
+}
+
+.jesse-card-back p {
+	margin: -3px;
 }
 
 .imgMeetJesse {
@@ -70,26 +132,6 @@ P {
 	height: auto;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 	border-radius: 100%;
-}
-
-.middle {
-	transition: .5s ease;
-	opacity: 0;
-	position: absolute;
-	top: 37%;
-	left: 657px;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	margin-left: auto;
-	margin-right: auto;
-	max-width: fit-content;
-}
-
-.name {
-	background-color: #4CAF50;
-	color: white;
-	font-size: 16px;
-	padding: 16px 32px;
 }
 
 .imgMeetJesseR {
@@ -118,13 +160,22 @@ P {
 
 .imageR {
 	position: relative;
-	/* width: 50%; */
 }
 
 .imageL {
 	position: relative;
-	/* width: 50%; */
 	margin-right: 0;
+}
+
+.imageLH {
+	position: relative;
+	margin-right: 0;
+	margin-top: 130px;
+}
+
+.imageLH:hover .overlayL {
+	width: 100%;
+	left: 0;
 }
 
 .imageR:hover .overlayR {
@@ -172,41 +223,36 @@ P {
 	-ms-transform: translate(-50%, -50%);
 }
 
-#overview {
-	margin-bottom: 20px;
-}
-
-#overviewText {
-	margin-top: 80px;
-	margin-right: 0;
-}
-
-#stats {
-	margin-left: 200px;
-}
-
-
-#history {
-
-}
-
 #family {
 	max-width: 800px;
+	margin-top: 15px;
 }
 
 .familyText {
-	padding-top: 1px;
+	padding: 5px 5px 5px 5px;
 	margin-bottom: 15px;
-	margin-left: 225px;
 	background-color: rgb(158, 231, 255);
-	width: 800px;
+	width: 1055px;
 	height: fit-content;
 	font-family: 'BioRhyme', 'Noto Sans SC', sans-serif, serif;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+	border: 1px dotted transparent;
+}
+
+.familyText:hover {
+	border: 1px dotted #3a7999;
 }
 
 .familyPhoto {
-	width: 1100px;
+	width: 800px;
+	height: auto;
+	margin: auto;
+	margin-left: 105px;
+}
+
+.familyPhoto:hover {
+	transform: skew(-10deg);
+	width: 800px;
 	height: auto;
 	margin: auto;
 	margin-left: 105px;
@@ -216,7 +262,7 @@ hr {
 	overflow: visible;
 	height: 30px;
 	border-style: solid;
-	border-color: black;
+	border-color: #00000042;
 	border-width: 1px 0 0 0;
 	border-radius: 20px;
 }
@@ -240,5 +286,5 @@ hr:before {
 }
 
 .topyLink a {
-	margin-left: 50%;
+	margin-left: 40%;
 }
