@@ -12,8 +12,29 @@ body {
 	max-width: fit-content;
 }
 
+#mcNavee {
+	margin-bottom: 5px;
+	max-width: 100%;
+	padding: 3%;
+	font-size: 1.5em;
+	background-color: transparent !important;
+	margin-left: 180px;
+	justify-content: center !important;
+}
+
+.nav-item {
+	color: #000000c2 !important;
+}
+
+a:link {
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+  }
+  a:hover {
+   border-bottom-color: #2980b9;
+  }
+
 .row {
-	font-family: 'BioRhyme', 'Noto Sans SC', sans-serif, serif;
 	display: flex;
 	justify-content: space-around;
 	max-width: 1200px;
@@ -95,7 +116,8 @@ h3 {
 	border-radius: 100%;
 }
 
-.jesse-card-front, .jesse-card-back {
+.jesse-card-front,
+.jesse-card-back {
 	position: absolute;
 	width: 100%;
 	height: 100%;
